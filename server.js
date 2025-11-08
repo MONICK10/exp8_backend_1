@@ -7,7 +7,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-    origin: ['https://frontend-exp8-1.onrender.com', 'http://localhost:3000'],
+    origin: ['https://exp8-frontend-1.onrender.com', 'http://localhost:3000'],
     credentials: true,
     optionsSuccessStatus: 200
 };
@@ -34,4 +34,5 @@ app.use('/api/admin', require('./routes/admin'));
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
+
 });
